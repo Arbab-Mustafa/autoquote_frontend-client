@@ -1,0 +1,225 @@
+.quote-details-container {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  color: #4a90e2;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.back-button:hover {
+  text-decoration: underline;
+}
+
+.quote-details-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.quote-details-title h2 {
+  margin: 0 0 5px 0;
+  font-size: 22px;
+  color: #333;
+}
+
+.quote-details-title .provider {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.quote-details-price {
+  text-align: right;
+}
+
+.quote-details-price .price {
+  font-size: 28px;
+  font-weight: 700;
+  color: #333;
+}
+
+.quote-details-price .price-note {
+  font-size: 12px;
+  color: #888;
+}
+
+.quote-details-summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 30px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 6px;
+}
+
+.summary-item {
+  flex: 1;
+  min-width: 100px;
+}
+
+.summary-item .label {
+  display: block;
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 4px;
+}
+
+.summary-item .value {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.coverage-details {
+  margin-bottom: 30px;
+}
+
+.coverage-details h3 {
+  font-size: 18px;
+  margin: 0 0 15px 0;
+  color: #333;
+}
+
+.coverage-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.coverage-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+}
+
+.coverage-item.covered {
+  background-color: #e8f5e9;
+}
+
+.coverage-item.not-covered {
+  background-color: #ffebee;
+  opacity: 0.7;
+}
+
+.coverage-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.covered .coverage-icon {
+  background-color: #4caf50;
+  color: white;
+}
+
+.not-covered .coverage-icon {
+  background-color: #f44336;
+  color: white;
+}
+
+.coverage-name {
+  font-size: 14px;
+}
+
+.covered .coverage-name {
+  color: #2e7d32;
+  font-weight: 500;
+}
+
+.not-covered .coverage-name {
+  color: #c62828;
+}
+
+.disclaimers {
+  margin-bottom: 30px;
+  padding: 15px;
+  background-color: #fff8e1;
+  border-radius: 6px;
+}
+
+.disclaimers h3 {
+  font-size: 16px;
+  margin: 0 0 10px 0;
+  color: #333;
+}
+
+.disclaimers p {
+  font-size: 14px;
+  color: #666;
+  margin: 0 0 10px 0;
+}
+
+.sample-contract-link {
+  color: #4a90e2;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.sample-contract-link:hover {
+  text-decoration: underline;
+}
+
+.quote-details-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.continue-btn {
+  padding: 12px 30px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+  background-color: #4a90e2;
+  color: white;
+}
+
+.continue-btn:hover {
+  background-color: #3a7bc8;
+}
+
+@media (max-width: 600px) {
+  .quote-details-header {
+    flex-direction: column;
+  }
+  
+  .quote-details-price {
+    text-align: left;
+    margin-top: 15px;
+  }
+  
+  .quote-details-summary {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .coverage-grid {
+    grid-template-columns: 1fr;
+  }
+}

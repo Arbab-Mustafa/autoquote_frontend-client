@@ -1,0 +1,303 @@
+.quote-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.quote-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 2px solid transparent;
+}
+
+.quote-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.quote-card.selected {
+  border-color: #4a90e2;
+}
+
+.quote-header {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.quote-header h3 {
+  margin: 0 0 5px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.provider {
+  font-size: 14px;
+  color: #666;
+}
+
+.tags {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  gap: 8px;
+}
+
+.tag {
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.tag.best-value {
+  background-color: #e3f2fd;
+  color: #1976d2;
+}
+
+.tag.most-popular {
+  background-color: #fff8e1;
+  color: #ff8f00;
+}
+
+.tag.dealer-recommended {
+  background-color: #e8f5e9;
+  color: #388e3c;
+}
+
+.quote-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.detail-item {
+  flex: 1;
+  min-width: 100px;
+}
+
+.label {
+  display: block;
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 4px;
+}
+
+.value {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.quote-price {
+  text-align: right;
+  margin-bottom: 15px;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+}
+
+.price-note {
+  font-size: 12px;
+  color: #888;
+}
+
+.quote-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.view-details-btn, .continue-btn {
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+}
+
+.view-details-btn {
+  background-color: #f5f5f5;
+  color: #333;
+  flex: 1;
+}
+
+.view-details-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.continue-btn {
+  background-color: #4a90e2;
+  color: white;
+  flex: 2;
+}
+
+.continue-btn:hover {
+  background-color: #3a7bc8;
+}
+
+.coverage-tooltip {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.tooltip-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #f5f5f5;
+  color: #666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-style: italic;
+  cursor: pointer;
+}
+
+.tooltip-content {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  width: 250px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 15px;
+  z-index: 10;
+  display: none;
+}
+
+.coverage-tooltip:hover .tooltip-content {
+  display: block;
+}
+
+.tooltip-content h4 {
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.tooltip-content ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tooltip-content li {
+  font-size: 13px;
+  padding: 4px 0;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.tooltip-content li.covered {
+  color: #388e3c;
+}
+
+.tooltip-content li.not-covered {
+  color: #d32f2f;
+}
+
+.add-ons {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.add-ons h3 {
+  font-size: 16px;
+  margin: 0 0 15px 0;
+  color: #333;
+}
+
+.add-on-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.add-on-btn {
+  padding: 10px 15px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 1px solid #e0e0e0;
+  background-color: white;
+  color: #333;
+}
+
+.add-on-btn:hover {
+  background-color: #f5f5f5;
+}
+
+.add-on-btn.insurance {
+  border-left: 4px solid #9c27b0;
+}
+
+.add-on-btn.bank-rates {
+  border-left: 4px solid #ff9800;
+}
+
+.add-on-btn.carfax {
+  border-left: 4px solid #2196f3;
+}
+
+.no-quotes {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+}
+
+.no-quotes h3 {
+  margin: 0 0 10px 0;
+  color: #d32f2f;
+}
+
+.no-quotes p {
+  color: #666;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .quote-header {
+    margin-bottom: 25px;
+  }
+  
+  .tags {
+    position: static;
+    margin-top: 10px;
+  }
+  
+  .quote-details {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .quote-actions {
+    flex-direction: column;
+  }
+  
+  .add-on-buttons {
+    flex-direction: column;
+  }
+  
+  .add-on-btn {
+    width: 100%;
+  }
+}

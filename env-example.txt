@@ -1,0 +1,11 @@
+# Frontend Environment Configuration
+# Copy this file to .env and update the values
+
+# Backend API URL
+REACT_APP_API_URL=http://localhost:3000
+
+# Environment
+REACT_APP_ENVIRONMENT=development
+
+# Widget Configuration (for production)
+REACT_APP_WIDGET_URL=https://quote.autoquoteapp.com 

@@ -1,0 +1,24 @@
+.footer {
+  margin-top: 30px;
+  padding-top: 15px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.disclaimer {
+  font-size: 12px;
+  color: #888;
+  text-align: center;
+}
+
+.powered-by {
+  font-size: 12px;
+  color: #666;
+  text-align: center;
+  font-weight: 500;
+}
